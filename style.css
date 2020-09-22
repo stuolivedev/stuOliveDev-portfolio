@@ -114,10 +114,12 @@ button {
     font-size: 7.5vh;
     color: inherit;
     padding: none;
+    margin: none;
     border: none;
 }
 
 button:hover {
     transition: 500ms;
-    font-size: 10vh;
+    color: black;
+    text-shadow: 4px 4px 4px rgba(255, 255, 255, 0.5);
 }
