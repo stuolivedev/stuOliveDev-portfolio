@@ -8,7 +8,7 @@ $(window).on('load',  function() {
 });
 
 $('#portfolio').on('click', function(){
-    $('#portfolioContent').show();
+    $('#portfolioContent').fadeIn("slow");
     $('#aboutContent').hide();
     $('#contactContent').hide();
 
@@ -19,7 +19,7 @@ $('#portfolio').on('click', function(){
 
 $('#about').on('click', function(){
     $('#portfolioContent').hide();
-    $('#aboutContent').show();
+    $("#aboutContent").fadeIn("slow");
     $('#contactContent').hide();
 
     $('#portfolio').removeClass('highlight');
@@ -30,7 +30,7 @@ $('#about').on('click', function(){
 $('#contact').on('click', function(){
     $('#portfolioContent').hide();
     $('#aboutContent').hide();
-    $('#contactContent').show();
+    $('#contactContent').fadeIn("slow");
 
     $('#portfolio').removeClass('highlight');
     $('#about').removeClass('highlight');
