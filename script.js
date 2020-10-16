@@ -1,26 +1,24 @@
 //Window load portfolio and contact
 $(window).on('load',  function() {
-    $('#aboutContent').show();
-    $('#portfolioContent').hide();
-    $('#contactContent').hide();
-});
-
-
-
-$('#about').on('click', function(){
-    $('#aboutContent').show();
-    $('#portfolioContent').hide();
+    $('#portfolioContent').show();
+    $('#aboutContent').hide();
     $('#contactContent').hide();
 });
 
 $('#portfolio').on('click', function(){
-    $('#aboutContent').hide();
     $('#portfolioContent').show();
+    $('#aboutContent').hide();
+    $('#contactContent').hide();
+});
+
+$('#about').on('click', function(){
+    $('#portfolioContent').hide();
+    $('#aboutContent').show();
     $('#contactContent').hide();
 });
 
 $('#contact').on('click', function(){
-    $('#aboutContent').hide();
     $('#portfolioContent').hide();
+    $('#aboutContent').hide();
     $('#contactContent').show();
 });
