@@ -49,6 +49,17 @@ body {
     align-items: center;
 }
 
+@media (max-width: 550px){
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 500px);
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10vw;
+    }
+}
+
 .row {
     display: flex;
     flex-direction: row;
@@ -71,8 +82,8 @@ body {
 
 @media (max-width: 550px) {
     .card {
-        margin-left: 15vw;
-        margin-right: 15vw;
+        margin-left: 10vw;
+        margin-right: 0vw;
         max-width: 400px;
     }
 }
@@ -120,6 +131,7 @@ h1 {
 @media (max-width: 550px) {
     h1 {
         font-size: 1.5rem;
+        margin-left: 10vw;
     }
 }
 
