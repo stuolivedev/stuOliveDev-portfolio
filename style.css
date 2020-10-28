@@ -18,16 +18,20 @@
     .navbar_grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, 500px);
+        width: 100vw;
+        margin-left: 5vw;
     }
 }
 
 .navbar {
     display: flex;
     flex-direction: row;
+    width: 100%;
     margin-top: 3vh;
     margin-bottom: 3vh;
     justify-content: center;
 }
+
 
 .grid {
     display: grid;
@@ -55,6 +59,11 @@
     justify-content: center;
 }
 
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
 
 .image {
     position: relative;
@@ -161,3 +170,31 @@ button:hover {
     }
 }
 
+.aboutLink {
+    color: grey;
+    font-size: 1.2rem;
+}
+
+.pink {
+    color: #fc037b
+}
+
+.orange {
+    color: #fc8403;
+}
+
+.green {
+    color: #31b543;
+}
+
+.objectIndent {
+    text-align: start; 
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.objectIndentMax {
+    text-align: start; 
+    margin-left: 15%;
+    margin-right: 5%;
+}

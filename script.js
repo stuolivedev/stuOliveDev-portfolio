@@ -1,5 +1,5 @@
 //Window load portfolio and contact
-$(window).on('load',  function() {
+$(document).ready(function() {
     $('#portfolioContent').show();
     $('#aboutContent').hide();
     $('#contactContent').hide();
@@ -36,3 +36,10 @@ $('#contact').on('click', function(){
     $('#about').removeClass('highlight');
     $('#contact').addClass('highlight');
 });
+
+
+const developer = {
+    socialMedia: {
+        
+    }
+}
