@@ -10,8 +10,7 @@
   <script src="https://kit.fontawesome.com/e7e540a868.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
-
-
+<body>
 
 <div class="navbar_grid" style="justify-content: center;">
   <h1 style="text-align: center;">Stuart Olive : Web Developer</h1>
@@ -99,24 +98,28 @@
 <div class="aboutGrid" id="aboutContent">
   <!--ABOUT SECTION-->
   <div>
-  <h1>Hi, my name is Stu.</h1>
-  <h1>I'm a web developer with a passion for clean and simple applications and UI.</h1>
-  <h1>With 10 years experience in technical and application support roles, I have a love of minamalist approaches that let you get to what's important.</h1>
-  <h1>Keeping it clean, simple and easy.</h1>
+    <h1>Hi, my name is Stu.</h1>
+    <h1>I'm a web developer with a passion for clean and simple applications and UI.</h1>
+    <h1>With 10 years experience in technical and application support roles, I have a love of minamalist approaches that
+      let you get to what's important.</h1>
+    <h1>Keeping it clean, simple and easy.</h1>
   </div>
 
 
-  <div>
+  <div style="margin-left: 5vw;">
     <h2 style="text-align: start;"><span class="pink">const</span> <span class="orange">aboutDeveloper</span> = {</h2>
     <h2 class="objectIndent"><span class="green">name: </span>'Stuart Olive',</h2>
     <h2 class="objectIndent"><span class="green">skills: </span> 'javascript, html, css',</h2>
     <h2 class="objectIndent"><span class="green">location: </span> 'Greater London, United Kingdom',</h2>
     <h2 class="objectIndent"><span class="green">socialMedia: </span> {</h2>
-      <h2 class="objectIndentMax"><span class="green">instagram: </span><a class="aboutLink" href="https://www.instagram.com/stuolive/?hl=en" target="_blank">'personal'</a></h2>
-      <h2 class="objectIndentMax"><span class="green">instagram: </span><a class="aboutLink" href="https://www.instagram.com/stuolive.photo/?hl=en" target="_blank">'photography'</a></h2>
-      <h2 class="objectIndentMax"><span class="green">linkedin: </span><a class="aboutLink" href="https://www.linkedin.com/in/stuart-olive-10024938/">'personal'</a>},</h2>
-      <h2 class="objectIndent"><span class="green">skills: </span> 'javascript, html, css',</h2>
-    </div>
+    <h2 class="objectIndentMax"><span class="green">instagram: </span><a class="aboutLink"
+        href="https://www.instagram.com/stuolive/?hl=en" target="_blank">'personal'</a></h2>
+    <h2 class="objectIndentMax"><span class="green">instagram: </span><a class="aboutLink"
+        href="https://www.instagram.com/stuolive.photo/?hl=en" target="_blank">'photography'</a></h2>
+    <h2 class="objectIndentMax"><span class="green">linkedin: </span><a class="aboutLink"
+        href="https://www.linkedin.com/in/stuart-olive-10024938/">'personal'</a>},</h2>
+    <h2 class="objectIndent"><span class="green">skills: </span> 'javascript, html, css',</h2>
+  </div>
 </div>
 
 <!--END OF ABOUT SECTION-->
@@ -126,18 +129,51 @@
 
 
 <!--CONTACT SECTION-->
-<div class="column" id="contactContent">
+<div class="contactGrid" id="contactContent">
   <!--CONTACT SECTION-->
-  <h1>Want to get in touch?</h1>
-  <div class="row">
-  <i class="fas fa-paper-plane"></i>
-    <h1>stuolivedev@gmail.com</h1>
-    </div>
+
+  <div class="form">
+    <h1>Want to chat?</h1>
+
+    <form class="myForm">
+      <label for="customer_name">Name </label>
+      <input type="text" name="customer_name" id="customer_name" required>
+      <label for="email_address">Email </label>
+      <input type="email" name="email_address" id="email_address">
+      <label for="message">Message</label>
+      <textarea name="message" id="message" maxlength="500"></textarea>
+      <button class="submit">Submit</button>
+    </form>
+
+  </div>
+
+  <div id="map"></div>
+
   <!--END OF CONTACT SECTION-->
 </div>
 <!--END OF CONTACT SECTION-->
 
 
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2TpzrOQ_x58Apj8ctRlM0mOAsfmmjKIc&callback=initMap&libraries=&v=weekly"></script>
+
+<script>
+  function initMap() {
+  var options = {
+    zoom:7,
+    center:{lat:51.3698, lng:-0.4886}
+  }
+  //New map
+
+  var map = new google.maps.Map(document.getElementById('map'), options);
+
+  var marker = new google.maps.Marker({
+    position:{lat:51.3698, lng:-0.4886},
+    map:map,
+  })
+
+}
+</script>
 <script src="script.js"></script>
 </body>
 

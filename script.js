@@ -1,8 +1,8 @@
 //Window load portfolio and contact
 $(document).ready(function() {
-    $('#portfolioContent').show();
+    $('#portfolioContent').hide();
     $('#aboutContent').hide();
-    $('#contactContent').hide();
+    $('#contactContent').show();
 
     $('#portfolio').addClass('highlight');
 });
@@ -38,8 +38,8 @@ $('#contact').on('click', function(){
 });
 
 
-const developer = {
-    socialMedia: {
-        
-    }
-}
+
+
+
+
+
