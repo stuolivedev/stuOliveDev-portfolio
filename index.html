@@ -106,6 +106,7 @@
   </div>
 
 
+<!--
   <div style="margin-left: 5vw;">
     <h2 style="text-align: start;"><span class="pink">const</span> <span class="orange">aboutDeveloper</span> = {</h2>
     <h2 class="objectIndent"><span class="green">name: </span>'Stuart Olive',</h2>
@@ -121,6 +122,7 @@
     <h2 class="objectIndent"><span class="green">skills: </span> 'javascript, html, css',</h2>
   </div>
 </div>
+-->
 
 <!--END OF ABOUT SECTION-->
 </div>
@@ -135,19 +137,19 @@
   <div class="form">
     <h1>Want to chat?</h1>
 
-    <form class="myForm">
+    <form class="myForm" action="https://formspree.io/f/xjvprzpv" method="POST">
       <label for="customer_name">Name </label>
-      <input type="text" name="customer_name" id="customer_name" required>
-      <label for="email_address">Email </label>
-      <input type="email" name="email_address" id="email_address">
+      <input type="text" name="name" id="name" required>
+      <label for="email">Email </label>
+      <input type="email" name="email" id="email">
       <label for="message">Message</label>
-      <textarea name="message" id="message" maxlength="500"></textarea>
+      <input name="message" id="message" maxlength="500" class="message"></input>
       <button class="submit">Submit</button>
     </form>
 
   </div>
 
-  <div id="map"></div>
+  <div id="map" class="map"></div>
 
   <!--END OF CONTACT SECTION-->
 </div>

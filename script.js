@@ -1,8 +1,8 @@
 //Window load portfolio and contact
 $(document).ready(function() {
-    $('#portfolioContent').hide();
+    $('#portfolioContent').show();
     $('#aboutContent').hide();
-    $('#contactContent').show();
+    $('#contactContent').hide();
 
     $('#portfolio').addClass('highlight');
 });
