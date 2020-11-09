@@ -19,7 +19,7 @@ Project is created with:
 * Stuart Olive 
 * stuolivedev@gmail.com
 * Live Link: stuolivedev.com
-* 1Project Link: https://github.com/stuolivedev/stuOliveDev-portfolio
+* Project Link: https://github.com/stuolivedev/stuOliveDev-portfolio
 
 ## Setup
 To run this project, install it locally using npm:
