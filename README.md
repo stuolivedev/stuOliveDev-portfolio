@@ -7,13 +7,16 @@
 ## General info
 This project serves as the personal web development portfolio for myself (Stuart Olive).
 The page show cases a selection of my web development projects, an 'About Me' section and a contact section.
+The Google Maps Javascript API is implemented on the 'contact' page with a pin showing my current location as of November 2020 (for employer information purposes). 
 	
 ## Technologies
 Project is created with:
 * Javascript
 * JQuery
+* Google Maps Javascript API
 * CSS Grid
 * Font Awesome
+* Formspree
 	
 ## Contact
 * Stuart Olive 
