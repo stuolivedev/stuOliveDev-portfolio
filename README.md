@@ -16,7 +16,8 @@ Project is created with:
 * Font Awesome
 	
 ## Contact
-Stuart Olive - stuolivedev@gmail.com
+Stuart Olive 
+stuolivedev@gmail.com
 Live Link: stuolivedev.com
 Project Link: https://github.com/stuolivedev/stuOliveDev-portfolio
 
